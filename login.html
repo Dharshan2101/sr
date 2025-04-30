@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SR ELECTRONICS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SR Electronics - Shop for TVs, ACs, Refrigerators, Kitchen Appliances, and more.">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .header {
+      background: linear-gradient(to right, #c7a5ec, #7fa9f1);
+      color: rgb(245, 238, 238);
+      padding: 15px 10px;
+      display: flex;
+      align-items: center;
+      height: 100px;
+    }
+
+    .logo {
+      font-weight: bold;
+      font-size: 24px;
+      margin-right: 10px;
+    }
+
+    .brand {
+      font-size: 26px;
+      font-weight: bold;
+      flex: 1;
+      color: white;
+      margin-left: 15px;
+    }
+
+    nav.nav {
+      background-color: white;
+      padding: 10px 0;
+      text-align: center;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .nav a {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    .categories {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 15px;
+      padding: 20px;
+    }
+
+    .category {
+      background-color: #f9f9f9;
+      padding: 10px;
+      text-align: center;
+      border-radius: 10px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .category:hover {
+      transform: scale(1.05);
+    }
+
+    .category img {
+      width: 80px;
+      height: 80px;
+      object-fit: contain;
+      margin-bottom: 10px;
+    }
+
+    .category span {
+      display: block;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .cart-icon {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+    }
+
+    .cart-icon img {
+      width: 40px;
+    }
+
+    .contact-section {
+      background-color: #f1f6fa;
+      color: #333;
+      padding: 30px 20px;
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .contact-section h2 {
+      font-size: 22px;
+      color: #333;
+      margin-bottom: 20px;
+      text-align: left;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      gap: 10px;
+      margin: 10px 0;
+      font-size: 16px;
+    }
+
+    .contact-item img {
+      width: 20px;
+      height: 20px;
+    }
+
+    @media (max-width: 480px) {
+      .header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .logo {
+        font-size: 20px;
+        margin: 0;
+      }
+
+      .brand {
+        font-size: 22px;
+        margin-top: 5px;
+      }
+
+      .nav {
+        gap: 10px;
+        font-size: 12px;
+      }
+
+      .categories {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      }
+
+      .category img {
+        width: 60px;
+        height: 60px;
+      }
+
+      .category span {
+        font-size: 13px;
+      }
+
+      .contact-item {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <img src="logo.png" alt="Site Logo" width="250" height="100">
+  </div>
+
+  <nav class="nav">
+    <a href="#">CHECKOUT</a>
+    <a href="#">ORDERS</a>
+    <a href="#">CONTACT</a>
+    <a href="#">LOGOUT</a>
+  </nav>
+
+  <div class="categories">
+    <div class="category"><img src="tv.png" alt="TV"><span>TVs</span></div>
+    <div class="category"><img src="ac.png" alt="AC"><span>Air Conditioners</span></div>
+    <div class="category"><img src="fridge.png" alt="Fridge"><span>Refrigerators</span></div>
+    <div class="category"><img src="wm.png" alt="Washing Machine"><span>Washing Machines</span></div>
+    <div class="category"><img src="stove.png" alt="Kitchen"><span>Kitchen Appliances</span></div>
+    <div class="category"><img src="printer.png" alt="Printer"><span>Printers & Office</span></div>
+    <div class="category"><img src="oven.png" alt="Ovens"><span>Ovens & Cookers</span></div>
+    <div class="category"><img src="bt.png" alt="Speakers"><span>Portable BT Speakers</span></div>
+    <div class="category"><img src="other.png" alt="other"><span>Others</span></div>
+  </div>
+
+  <div class="cart-icon">
+    <img src="cart.png" alt="Cart">
+  </div>
+
+  <!-- CONTACT SECTION -->
+  <div class="contact-section">
+    <h2>CONTACTS</h2>
+    <div class="contact-item">
+      <img src="location.png" alt="Location Icon">
+      <span>SR DISH & MEDIA,Gokul Circle, Punganur,<br>Andhra Pradesh - 517247</span>
+    </div>
+    <div class="contact-item">
+      <img src="phone.png" alt="Phone Icon">
+      <span>+91 9642298888</span>
+    </div>
+    <div class="contact-item">
+      <img src="mail.png" alt="Email Icon">
+      <span>srehp4@gmail.com</span>
+    </div>
+  </div>
+
+</body>
+</html>
